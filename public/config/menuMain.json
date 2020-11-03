@@ -14,7 +14,7 @@
     "path": "pages/1-tema.html",
     "submenu": [
       {
-        "icon": "fa fa-file-text",
+        "icon": "fa fa-play-circle",
         "slug": "alistamiento",
         "title": "1.1 Alistamiento de equipos esenciales para el manejo de productos",
         "anchor": "alistamiento1"
