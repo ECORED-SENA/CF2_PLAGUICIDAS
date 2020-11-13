@@ -1,0 +1,56 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },
+  {
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "alistamiento",
+    "title": "1. Alistamiento de recursos",
+    "breadcrumb": ["Inicio","alistamiento"],
+    "path": "pages/1-tema.html",
+    "submenu": [
+      {
+        "icon": "fa fa-play-circle",
+        "slug": "alistamiento",
+        "title": "1.1 Alistamiento de equipos esenciales para el manejo de productos",
+        "anchor": "alistamiento1"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "icon": "fa fa-file-text",
+    "slug": "area",
+    "title": "2. Área de almacenamiento",
+    "breadcrumb": ["Inicio","area"],
+    "path": "pages/2-tema.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "area",
+        "title": "2.1 Procedimiento, reportes, y descontaminación del área",
+        "anchor": "procedimiento"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "fa fa-file-text",
+    "slug": "acondicionamiento",
+    "title": "3. Acondicionamiento de la bodega de almacenamiento",
+    "breadcrumb": ["Inicio","acondicionamiento"],
+    "path": "pages/3-tema.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "acondicionamiento",
+        "title": "3.1 Limpieza, clasificación, descontaminación ",
+        "anchor": "limpieza"
+      }
+    ]
+  }
+]

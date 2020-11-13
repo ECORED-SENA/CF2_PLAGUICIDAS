@@ -34,9 +34,12 @@ html(lang="es")
                         .card.wow.flipInX(data-wow-delay=".4s")
                             .card-body
                                 ul.list-group.list-group-flush.list.my-n3.nav-temas
-                                    +navTemaItem('1', 'Alistamiento de recursos', 'main.html#page/#tema-1/')
-                                    +navTemaItem('2', 'Área de almacenamiento', 'main.html#page/#tema-2/')
-                                    +navTemaItem('3', 'Acondicionamiento de la bodega de almacenamiento', 'main.html#page/#tema-3/')
+                                    +navTemaItem('1', 'Alistamiento de recursos', '#tema-1')
+                                    +navTemaItem('2', 'Área de almacenamiento', '#tema-2')
+                                    +navTemaItem('3', 'Acondicionamiento de la bodega de almacenamiento', '#tema-3')
+                                    +navTemaItem('glosary', 'Glosario', '#glosario')
+                                    +navTemaItem('folder', 'Material complementario', '#anexos')
+                                    +navTemaItem('references', 'Referencias bibliográficas', '#referencias')
 
         section#mainContent         
             #tema-1
