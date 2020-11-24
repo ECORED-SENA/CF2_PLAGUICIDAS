@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Implementación del SGA Sistema globalmente armonizado en Colombia</title>
+        <meta meta name="description" content="El almacenamiento de plaguicidas y en general de productos de origen químico o biológico, requiere de actividades de relevancia en los procesos de transporte, recepción, almacenamiento y distribución de estos. Por lo anterior, es indispensable realizar un alistamiento de los recursos requeridos para prevenir y manejar derrames de los productos de acuerdo con los parámetros técnicos, lo exigido por el Sistema Globalmente Armonizado para la correcta manipulación de los productos químicos en Colombia (en adelante SGA), y la normatividad vigente.">
+        <link rel="icon" type="image/svg+xml" href="assets/images/logos/senaLogo.svg">
+        <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.css">
+        <link href="assets/css/fancybox.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="theme-dark page-header-textura" id="page-home">
+        <header class="curso-presentacion page-header" id="CursoPresentacion">
+            <div class="page-textura">
+                <div class="container">
+                    <div class="curso-topbar justify-content-center justify-content-md-between"><a class="curso-topbar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="168.273" height="164.177" viewBox="0 0 168.273 164.177">
+                                <path id="SENA_LOGO" data-name="SENA LOGO" d="M85.349,1a18.09,18.09,0,1,0,18.09,18.09h0A18.1,18.1,0,0,0,85.349,1ZM25.617,42.983a33.722,33.722,0,0,0-9.386,1.024,11.156,11.156,0,0,0-5.12,2.56A5.346,5.346,0,0,0,10.086,52.2c.683,1.707,2.56,2.9,4.608,3.584,4.437,1.536,9.386,1.877,13.994,2.731a5.1,5.1,0,0,1,2.389,1.024,1.369,1.369,0,0,1-.683,2.048,9.146,9.146,0,0,1-5.291.683A8.354,8.354,0,0,1,20.5,61.244a1.962,1.962,0,0,1-.853-2.389H9.233A7.663,7.663,0,0,0,10.6,63.463a7.59,7.59,0,0,0,4.267,2.389A28.541,28.541,0,0,0,23.4,66.876,52.426,52.426,0,0,0,35,66.023a11.043,11.043,0,0,0,5.8-2.9,5.358,5.358,0,0,0-1.365-8.533,21.267,21.267,0,0,0-5.8-2.048c-3.072-.683-5.973-1.024-9.045-1.536a9.114,9.114,0,0,1-3.072-.853,1.226,1.226,0,0,1,0-2.219,9.369,9.369,0,0,1,4.437-.683,10.554,10.554,0,0,1,4.608.853A1.877,1.877,0,0,1,31.59,49.81h9.9a5.669,5.669,0,0,0-1.195-3.584A8.875,8.875,0,0,0,35.515,43.5c-3.584-.341-6.827-.512-9.9-.512Zm21.333.683V67.217H75.792V62.1H57.531V57.489H73.744V52.54H57.531V48.786H75.109v-5.12Zm47.615,0H81.253V67.217H91.322V51.346l13.824,15.872h13.824V43.666H108.9v15.7Zm42.495,0L120.676,67.217h10.581l2.56-4.267H150.2l2.389,4.267h11.776l-15.53-23.551ZM142.35,49.3l5.12,8.533h-10.41ZM.7,74.044l.171,12.8L49,86.673c2.389.512,3.925,2.048,3.413,5.8l-29.7,51.711,9.557,9.045L78.01,74.044Zm91.646,0L137.4,152.89l9.9-8.874L117.433,92.3c-.512-3.584.853-5.291,3.413-5.8l48.127.171V74.044ZM84.837,87.185,42.512,159.546l11.264,5.461,28.159-47.615a4.283,4.283,0,0,1,2.9-1.195,4.681,4.681,0,0,1,3.072,1.195l28.159,47.786,11.605-5.973Z" transform="translate(-0.7 -1)" fill="#FF6B00" />
+                            </svg>
+                        </a><a class="curso-topbar__menubar collapsed btn-menu-responsive d-none" data-toggle="collapse" href="#curso-topbar__nav" aria-expanded="false"><span></span><span></span><span></span></a>
+                        <nav class="curso-topbar__nav collapse show d-none d-md-block" id="curso-topbar__nav">
+                            <ul class="curso-topbar__list">
+                                <li class="curso-topbar__item"><a class="curso-topbar__link text-white" href="#ResultadosAprendizaje"><span>Resultados de aprendizaje</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link text-white" href="#IndiceTematico"><span>Índice temático</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link text-white" href="#Creditos"><span>Créditos</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="curso-portada">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="curso-subtitulo" id="curso-titulo-componente">Manejo Racional de Plaguicidas</h3>
+                                <h1 class="curso-titulo" id="curso-titulo-tema">Implementación del SGA Sistema globalmente armonizado en Colombia</h1>
+                                <div class="brand-line-primary"></div>
+                                <p class="curso-descripcion">El almacenamiento de plaguicidas y en general de productos de origen químico o biológico, requiere de actividades de relevancia en los procesos de transporte, recepción, almacenamiento y distribución de estos. Por lo anterior, es indispensable realizar un alistamiento de los recursos requeridos para prevenir y manejar derrames de los productos de acuerdo con los parámetros técnicos, lo exigido por el Sistema Globalmente Armonizado para la correcta manipulación de los productos químicos en Colombia (en adelante SGA), y la normatividad vigente.</p>
+                                <p class="curso-descripcion">El plan de manejo seguro de derrames de dichos productos debe contemplar la capacitación de todo el personal que incluya el conocimiento de las hojas o fichas de seguridad de cada plaguicida y el cumplimiento del protocolo de seguridad, el cual debe incluir el uso de elementos de protección personal (en adelante EPP), y demás materiales y equipos requeridos, con el fin de minimizar los riesgos de incidentes y accidentes de trabajo. El manejo de la matriz de incompatibilidad de almacenamiento de plaguicidas es primordial para tal fin.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="curso-resultados section bg-base-light" id="ResultadosAprendizaje">
+            <div class="container">
+                <h2> Resultados de <br>aprendizaje</h2>
+                <div class="brand-line-primary"></div>
+                <div class="card resultado-item">
+                    <div class="card-body">
+                        <ul class="bg-color-dark">
+                            <li><span>220201032-03. Alistar recursos para el manejo de derrames de plaguicidas de acuerdo con los parámetros técnicos y normatividad vigente.</span></li>
+                            <li><span>220201032-04. Implementar planes de manejo seguro de derrames de plaguicidas, según parámetros técnicos y normativa vigente.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="curso-indice-tematico section" id="IndiceTematico">
+            <div class="container">
+                <h2>Desarrollo de <br>contenidos</h2>
+                <div class="brand-line-primary"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="card wow flipInX" data-wow-delay=".4s">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush list my-n3 nav-temas">
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">1</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-1">Alistamiento de recursos</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-1">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">2</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-2">Área de almacenamiento</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-2">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">3</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-3">Acondicionamiento de la bodega de almacenamiento</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-3">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-sort-alpha-asc"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#glosario">Glosario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#glosario">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-folder-open"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#anexos">Material complementario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#anexos">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-book"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#referencias">Referencias bibliográficas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#referencias">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent">
+            <div id="tema-1">
+                <div class="container" id="alistamiento">
+                    <div class="header-ecored">
+                        <h1>1. Alistamiento de recursos</h1>
+                    </div><br id="alistamiento1">
+                    <div class="jumbotron bg-white">
+                        <div class="header-ecored mt-0">
+                            <h2>1.1 - Alistamiento de equipos esenciales para el manejo de productos.</h2>
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="col-10">
+                                <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/8FXXXY-MTDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <p>El proceso de almacenamiento y operación de plaguicidas se debe establecer en un sistema de documentación y de manipulación de los productos, equipos y protección personal utilizados, además de procedimientos y manejo de emergencias orientado hacia los trabajadores.</p>
+                        <p>El manejo de productos químicos implica la adecuación del sitio acorde con el tipo de productos: embalaje, transporte y recepción. El depósito de estas sustancias debe incorporar el conocimiento de las fichas de seguridad de los productos (en adelante FDS) y un plan de emergencia y primeros auxilios. </p>
+                        <p>El Gobierno Nacional ha implementado el Sistema Globalmente Armonizado (en adelante SGA), el cual se constituye en una herramienta fundamental para regular el etiquetado y clasificación de productos químicos como un componente esencial para garantizar la seguridad en los sitios seleccionados en el almacenamiento y manipulación de sustancias químicas o biológicas.</p><img class="img-fluid img-a" src="assets/images/pages/img1.png" style="max-width: 80%">
+                        <p>Dentro los componentes del SGA, es indispensable tener en cuenta los siguientes aspectos:</p>
+                        <hr>
+                        <h2 class="text-center mt-5">Sitios de almacenamiento</h2>
+                        <div class="card-deck mt-5">
+                            <div class="card"><img class="card-img-top" src="assets/images/pages/img1.svg" alt="...">
+                                <div class="card-body">
+                                    <div class="subtitulo-ecored card-title">
+                                        <h3><span class="number">1</span>Bodega</h3>
+                                        <hr>
+                                    </div>
+                                    <p class="card-text">Comprende un espacio que cuenta con techo y paredes laterales. los materiales se almacenan según un orden determinado.</p>
+                                </div>
+                            </div>
+                            <div class="card"><img class="card-img-top" src="assets/images/pages/img2.svg" alt="...">
+                                <div class="card-body">
+                                    <div class="subtitulo-ecored card-title">
+                                        <h3><span class="number">2</span>Cobertizo</h3>
+                                        <hr>
+                                    </div>
+                                    <p class="card-text">Espacio con techo, el cual no tiene paredes laterales, los materiales guardados allí necesitan ventilación.</p><br>Los cobertizos son usados para almacenar sustancias con peligro de ignición espontánea.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck mt-4">
+                            <div class="card"><img class="card-img-top" src="assets/images/pages/img3.svg" alt="...">
+                                <div class="card-body">
+                                    <div class="subtitulo-ecored card-title">
+                                        <h3><span class="number">3</span>Patio</h3>
+                                        <hr>
+                                    </div>
+                                    <p class="card-text">Espacio al descubierto, es un área mejorada o nivelada, revestida con material endurecido. Útil para almacenar materiales resistentes a condiciones climáticas adversas (no se deteriora la naturaleza del producto, ni su empaque). Práctico para materiales voluminosos o pesados.</p>
+                                </div>
+                            </div>
+                            <div class="card"><img class="card-img-top" src="assets/images/pages/img4.svg" alt="...">
+                                <div class="card-body">
+                                    <div class="subtitulo-ecored card-title">
+                                        <h2><span class="number">4</span>Depósito</h2>
+                                        <hr>
+                                    </div>
+                                    <p class="card-text">Utilizado para la carga a granel (sin protección para ningún tipo de envase).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck mt-4">
+                            <div class="card"><img class="card-img-top" src="assets/images/pages/img5.svg" alt="...">
+                                <div class="card-body">
+                                    <div class="subtitulo-ecored card-title">
+                                        <h3><span class="number">5</span>Cuarto refrigerado</h3>
+                                        <hr>
+                                    </div>
+                                    <p class="card-text">Almacena materiales de rápida descomposición o que requieren bajas temperaturas para conservar sus propiedades, incluyendo explosivos.</p>
+                                </div>
+                            </div>
+                            <div class="card"><img class="card-img-top" src="assets/images/pages/img6.svg" alt="...">
+                                <div class="card-body">
+                                    <div class="subtitulo-ecored card-title">
+                                        <h2><span class="number">6</span>Tanque</h2>
+                                        <hr>
+                                    </div>
+                                    <p class="card-text">Se utilizan para almacenar materiales a granel en estado líquido.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="text-center mt-7">Características del sitio</h2>
+                        <p>Las estructuras físicas para almacenamiento deben cumplir con las Normas Colombianas de Diseño y Construcción Sismo Resistentes (NSR – 98), adoptadas por la ley 400 de 1997 y el decreto 33 de 1998 y sus versiones posteriores.</p>
+                        <p>El diseño de una bodega debe coincidir con la naturaleza de los productos a almacenar y cumplir con todos los ítems contemplados en la matriz de compatibilidad de sustancias químicas. Los materiales de construcción no deben ser combustibles y la estructura del edificio debe ser de concreto armado o acero. En cuanto a las construcciones en acero es importante aislarlas para protegerlas del calor.</p>
+                        <div id="question">
+                            <section class="my-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="question">
+                                            <div class="question-header">
+                                                <div class="question-number"><span>1.</span></div>
+                                                <div class="question-title"><span>Ubicación del sitio</span></div>
+                                            </div>
+                                            <div class="question-body"><img class="img-fluid img-a" src="assets/images/pages/img7.svg" style="max-width: 100%">
+                                                <p>Todo sitio de almacenamiento de sustancias peligrosas debe cumplir con los siguientes parámetros:</p>
+                                                <ul>
+                                                    <li>Estar alejado de zonas pobladas, de fuentes de captación de agua potable, de áreas inundables y de fuentes externas de peligro.</li>
+                                                    <li class="mt-2">Debe cumplir con lo dispuesto en el Plan de Ordenamiento Territorial del municipio donde se desarrolle la actividad.</li>
+                                                    <li class="mt-2">Debe ser de fácil acceso para el transporte y para las situaciones de emergencia.</li>
+                                                    <li class="mt-2">El terreno debe ser estable para soportar estructuras.</li>
+                                                    <li class="mt-2">Debe contar con servicios de electricidad, agua potable, red sanitaria, pluvial y drenaje para que, en caso de emergencia, lleguen contaminantes a las fuentes de agua o al alcantarillado.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="question">
+                                            <div class="question-header">
+                                                <div class="question-number"><span>2.</span></div>
+                                                <div class="question-title"><span>Diseño del sitio</span></div>
+                                            </div>
+                                            <div class="question-body"><img class="img-fluid img-a" src="assets/images/pages/img8.svg" style="max-width: 100%">
+                                                <p>El diseño de los sitios debe contemplar lo siguiente:</p>
+                                                <ul>
+                                                    <li>Las sustancias químicas incompatibles deben estar separadas por áreas, y contemplar el espacio suficiente para el movimiento y manejo seguro de sustancias y residuos peligrosos. Hacia ambos costados de la pila o área de almacenamiento debe haber espacio libre con el fin de permitir el desplazamiento en caso de emergencia.</li>
+                                                    <li class="mt-2">Los materiales de construcción no deben ser combustibles.</li>
+                                                    <li class="mt-2">La estructura del edificio debe ser de concreto armado o acero.</li>
+                                                    <li class="mt-2">Las edificaciones nuevas deben cumplir con las normas Colombianas de diseño y construcción sismo resistentes (NSR-98).</li>
+                                                    <li class="mt-2">Las áreas de oficina deben estar fuera del área de riesgo.</li>
+                                                    <li class="mt-2">Los pasillos de circulación deben ser suficientemente amplios para permitir el movimiento seguro del personal.</li>
+                                                </ul>
+                                                <p>En la siguiente lista se muestran los elementos básicos presentes en el diseño de las áreas de almacenamiento:</p>
+                                                <ul>
+                                                    <li>Muros cortafuegos en paredes externas y divisiones internas que lo requieran. </li>
+                                                    <li class="mt-2">Resistencia al fuego de muros, puertas, estanterías y tuberías.</li>
+                                                    <li class="mt-2">Las puertas para entrada y salida de productos, deben ser las mínimas requeridas, incluyendo accesos para los vehículos de emergencias. </li>
+                                                    <li class="mt-2">Salidas de emergencia diferentes a las puertas de mercancías.</li>
+                                                    <li class="mt-2">Pisos impermeables y resistentes. Previendo la contención de agua (limpieza y emergencia, con desnivel del 1% y tener canales para contener el agua. </li>
+                                                    <li class="mt-2">Drenajes para aguas lluvias y de proceso o limpieza; estos canales se deben conectar a un sistema de recolección y tratamiento; todos los canales o drenajes deben estar protegidos con rejillas.</li>
+                                                    <li class="mt-2">El techo y su estructura debe ser de material resistente al fuego, debe proteger de la lluvia y permitir la evacuación de humo y gases. La ventilación debe estar siempre abierta.</li>
+                                                    <li class="mt-2">Ventilación natural o instalada con difusores y ventiladores.</li>
+                                                    <li class="mt-2">Se recomienda estanterías en el diseño de góndola para permitir la circulación de aire y evitar la acumulación de vapores.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="question">
+                                            <div class="question-header">
+                                                <div class="question-number"><span>3.</span></div>
+                                                <div class="question-title"><span>Iluminación e instalaciones eléctricas</span></div>
+                                            </div>
+                                            <div class="question-body"><img class="img-fluid img-a" src="assets/images/pages/img9.svg" style="max-width: 100%">
+                                                <p>En lo posible se deben instalar tejas transparentes en la cubierta.</p>
+                                                <p>Las instalaciones eléctricas en bodegas de almacenamiento de sustancias químicas peligrosas deben seguir los lineamientos descritos en el Código Eléctrico Colombiano (Norma Técnica Colombiana NTC 2050).</p>
+                                                <p>Se recomienda evitar instalaciones eléctricas temporales. Todas las instalaciones eléctricas deben ser instaladas y operadas por personal competente y calificado.</p>
+                                            </div>
+                                        </div>
+                                        <div class="question">
+                                            <div class="question-header">
+                                                <div class="question-number"><span>4.</span></div>
+                                                <div class="question-title"><span>Recomendaciones generales</span></div>
+                                            </div>
+                                            <div class="question-body"><img class="img-fluid img-a" src="assets/images/pages/img10.svg" style="max-width: 100%">
+                                                <p>Evite dar uso de oficina, vestidor o cuarto de basura como parte integral de la bodega de almacenamiento de plaguicidas o sustancias químicas, de lo contrario debe construir una estructura con resistencia contra el fuego de al menos 60 minutos.</p>
+                                                <p>En los sitios de almacenamiento de plaguicidas o sustancias químicas está prohibido tener alimentos o ser vivienda para animales o personas.</p>
+                                                <p>Se debe mantener restringido el ingreso de personal ajeno a la bodega, especialmente niños.</p>
+                                                <p>Dependiendo de la magnitud del sitio, se deben acondicionar sitios para embalaje, traslado, recepción de los plaguicidas.</p>
+                                            </div>
+                                        </div>
+                                        <div class="question">
+                                            <div class="question-header">
+                                                <div class="question-number"><span>5.</span></div>
+                                                <div class="question-title"><span>Almacenamiento exterior</span></div>
+                                            </div>
+                                            <div class="question-body"><img class="img-fluid img-a" src="assets/images/pages/img11.svg" style="max-width: 100%">
+                                                <p>Estos sitios se recomiendan para sustancias peligrosas como líquidos altamente inflamables, cilindros de gas o cloro líquido. Implica las siguientes condiciones:</p>
+                                                <ul>
+                                                    <li>Seguridad y protección ambiental similar a lo descrito para el almacenamiento en el interior. </li>
+                                                    <li class="mt-2">Para su transporte se recomienda el uso de estibas.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="question">
+                                            <div class="question-header">
+                                                <div class="question-number"><span>6.</span></div>
+                                                <div class="question-title"><span>Operación: transporte, recepción y entrega de plaguicidas</span></div>
+                                            </div>
+                                            <div class="question-body"><img class="img-fluid img-a" src="assets/images/pages/img12.svg" style="max-width: 100%">
+                                                <p>Al recibir plaguicidas recuerde verificar:</p>
+                                                <ul>
+                                                    <li>Prescripción o fecha de vencimiento, lote.</li>
+                                                    <li class="mt-2">Estado del embalaje y del envase.</li>
+                                                    <li class="mt-2">Legibilidad y buen estado de las etiquetas.</li>
+                                                    <li class="mt-2">Adquirir o entregar la cantidad de producto requerido y prescrito por un ingeniero agrónomo con tarjeta profesional vigente.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <p>La entidad que regula el transporte de plaguicidas en Colombia es el Instituto Colombiano Agropecuario ICA, mediante Resolución 1167 del 25 de marzo de 2010, por medio de la cual establecen los requisitos para el registro y control de personas que se dediquen a la comercialización de insumos agropecuarios y/o semillas a través de establecimientos de comercio.</p>
+                        <section>
+                            <div class="row justify-content-center">
+                                <div class="col-auto"><a class="media-link" href="media/documentos/Anexo_1.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                        <div class="media-link-title">
+                                            <p> Resolución 1167 del 25 de marzo de 2010</p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </section>
+                        <h3 class="text-center mt-7">Para el transporte de plaguicidas es importante tener en cuenta:</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <div class="card bg-color-azul">
+                                    <div class="card-body">
+                                        <p class="header-step">Que el producto se transporte en un vehículo adecuado, de tal forma que este sea de uso exclusivo para este fin.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="card bg-color-azul">
+                                    <div class="card-body">
+                                        <p class="header-step">Los plaguicidas solo deben ser trasportados por personal calificado, conductor y ayudante.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="card bg-color-azul">
+                                    <div class="card-body">
+                                        <p class="header-step">El vehículo donde se transportan los plaguicidas debe estar en buen estado y debe cumplir con el porte de elementos de seguridad para la atención de posibles derrames o accidentes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="card bg-color-azul">
+                                    <div class="card-body">
+                                        <p class="header-step">Está prohibido realizar el traslado de plaguicidas sobre el lomo de los animales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-2">
+                <div class="container" id="area">
+                    <div class="header-ecored">
+                        <h1>2. Área de almacenamiento</h1>
+                    </div><br id="procedimiento">
+                    <div class="jumbotron bg-white">
+                        <div class="header-ecored mt-0">
+                            <h2>2.1 - Procedimiento, reportes, y descontaminación del área</h2>
+                        </div>
+                        <p>Con el fin de fortalecer el almacenamiento seguro y manipulación de plaguicidas, estas deben ser monitoreadas y controladas periódicamente para evitar situaciones adversas.</p>
+                        <p>A continuación, se describe dicho procedimiento:</p>
+                        <div class="sub-line">
+                            <h3>Recepción y descarga</h3>
+                        </div><img class="img-fluid img-a" src="assets/images/pages/img13.svg" style="max-width: 100%">
+                        <p>Las operaciones son aparentemente sencillas, sin embargo, existe alta probabilidad accidentes o incidentes. Es importante contemplar este aspecto como una de las operaciones de mayor cuidado.</p>
+                        <section class="my-5 pt-5">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 my-2 my-md-0">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img14.svg"></div>
+                                            <h4>En la recepción de plaguicidas:</h4>
+                                            <div class="hr"></div>
+                                            <ul class="text-left">
+                                                <li>El vehículo cumple con protocolo de seguridad para el transporte de plaguicidas. Los productos deben estar visiblemente protegidos contra volcamientos.</li>
+                                                <li class="mt-2">El vehículo no debe contener otros elementos como llantas, herramientas y productos de limpieza, etc., al menos que se guarden en un compartimiento separado de tal manera que no entren en contacto con la carga.</li>
+                                                <li class="mt-2">Por ningún motivo al lado de los plaguicidas se deben contener productos alimenticios o farmacéuticos.</li>
+                                                <li class="mt-2">Debe estar visible la identificación de la clase de peligro del producto transportado.</li>
+                                                <li class="mt-2">La carga debe estar aislada del conductor.</li>
+                                                <li class="mt-2">La carga debe estar en recipientes sellados y asegurados al vehículo.</li>
+                                                <li class="mt-2">Las cajas no deben presentar residuos de producto en su parte externa.</li>
+                                                <li class="mt-2">Los envases al interior de la caja también deben ir sellados y limpios.</li>
+                                                <li class="mt-2">Tanto las cajas como los envases deben poseer clara identificación y su etiqueta.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-7 my-md-7">
+                                    <div class="card bg-color2">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img15.svg"></div>
+                                            <h4>Para la descarga e ingreso de los plaguicidas</h4>
+                                            <div class="hr"></div>
+                                            <ul class="text-left">
+                                                <li>El vehículo debe estar apagado y asegurado contra movimiento (colocar dos tacos enfrentados en cada una de las llantas traseras del vehículo).</li>
+                                                <li class="mt-2">Antes de comenzar la descarga, asegurarse que la carga corresponde a lo solicitado y que los documentos están en orden.</li>
+                                                <li class="mt-2">Verificar que los contenedores estén perfectamente identificados (sin etiquetas adicionales que puedan generar confusión).</li>
+                                                <li class="mt-2">Verificar el tamaño de los contenedores, el estado de las sustancias (sólido o líquido), calidad del empaque y la disposición del personal (estado de salud y uso de elementos de protección personal correspondientes).</li>
+                                                <li class="mt-2">Cumplir con elementos y normas ergonómicas para evitar lesiones osteomusculares en el momento de la descarga.</li>
+                                                <li class="mt-2">Proveer el lugar de descarga de los productos plaguicidas con rampas provisionales, con el fin de lograr una superficie uniforme y prevenir accidentes.</li>
+                                                <li class="mt-2">El “corredor” de circulación provisional de la carga debe estar libre de obstáculos.</li>
+                                                <li class="mt-2">Ingresar las cajas y ubicarlas en un lugar temporal.</li>
+                                                <li class="mt-2">Desempacar, clasificar y ubicar en la estantería final.</li>
+                                                <li class="mt-2">Para descargar recipientes del tipo caneca de 55 galones, acondicionar de tal manera que el piso del camión coincida con el piso de la bodega y así utilizar un carro transportador hasta el lugar de almacenamiento final asignado. </li>
+                                                <li class="mt-2">La identificación de la sustancia y de su clase de riesgo es fundamental para la distribución de los productos en la bodega.</li>
+                                                <li class="mt-2">Para la descarga de líquidos, es importante contar con material absorbente de emergencia durante la operación.</li>
+                                                <li class="mt-2">Descargar una caja o una caneca a la vez.</li>
+                                                <li class="mt-2">No colocar las cajas y los plaguicidas en lugares húmedos ni al aire libre o exponer al calor.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2 my-md-3">
+                                    <div class="card bg-color3">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img16.svg"></div>
+                                            <h4>Almacenamiento</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left mb-4"><b>Estándares de seguridad:</b> características y prácticas seguras en la bodega o almacén:</p>
+                                            <ul class="text-left">
+                                                <li>Almacenar productos por tipos de materiales como cartón, papel, plásticos, madera, etc. </li>
+                                                <li class="mt-2">Toda área donde se almacenen los agroquímicos debe ser de acceso restringido y el manejo debe quedar a cargo de personal capacitado y calificado.</li>
+                                                <li class="mt-2">Los plaguicidas, deben ser aislados de fertilizantes, combustibles, u otros insumos, utensilios, herramientas.</li>
+                                                <li class="mt-2">Todo producto debe llevar su etiqueta la información que indica la norma.</li>
+                                                <li class="mt-2">Almacenar solamente las cantidades estrictamente necesarias.</li>
+                                                <li class="mt-2">Organizar para entregar primero los plaguicidas que están por cumplir su fecha de vencimiento.</li>
+                                                <li class="mt-2">Organizar los estantes teniendo en cuenta el nivel de toxicidad, la clase de formulación y la compatibilidad entre sus componentes, teniendo en cuenta que los más tóxicos deben ubicarse en la parte inferior y los menos tóxicos la parte superior; los líquidos abajo y los polvos arriba.</li>
+                                                <li class="mt-2">La persona encargada del almacenamiento debe disponer de los siguientes equipos de protección: Overol, guantes y botas impermeables, respirador con filtros para vapores orgánicos y para polvos y neblinas.</li>
+                                                <li class="mt-2">El área de almacenamiento debe ser exclusiva para plaguicidas e independiente de otro tipo de elementos y no debe destinarse para trabajos de oficina.</li>
+                                                <li class="mt-2">Es necesario proteger los plaguicidas de la humedad, el calor excesivo y del sol directo.</li>
+                                                <li class="mt-2">Verificar continuamente la estantería (que esté libre de roturas, anclada, soportada y señalizada de acuerdo a la clasificación toxicológica).</li>
+                                                <li class="mt-2">Preferiblemente, la distribución de los estantes debe ser de una vía: 80 cm y si es doble: 160 cm de ancho.</li>
+                                                <li class="mt-2">En los sitios de almacenamiento no deben estar elementos de oficina, cocina, comedor, reservorios u otras fuentes de agua.</li>
+                                                <li class="mt-2">Debe existir un muro de contención que impida la expansión de derrames. También una salida de emergencia.</li>
+                                                <li class="mt-2">Instalar cerca una fuente de agua para lavado de ojos y cuerpo.</li>
+                                                <li class="mt-2">La ubicación de la bodega o del almacén debe permitir la entrada de vehículos (carro de bomberos o proveedor de productos químicos).</li>
+                                                <li class="mt-2">La puerta de entrada al almacén o bodega debe estar asegurada.</li>
+                                                <li class="mt-2">El piso del almacén debe ser impermeable.</li>
+                                                <li class="mt-2">La ventilación del almacén o bodega debe evitar la acumulación de vapores tóxicos o inflamables.</li>
+                                                <li class="mt-2">La iluminación del lugar debe facilitar la lectura de las etiquetas y facilitar la inspección.</li>
+                                                <li class="mt-2">Establecer normas de continuo orden y aseo en la bodega.</li>
+                                                <li class="mt-2">Tener equipos para el control de incendios (extintores).</li>
+                                                <li class="mt-2">Tener los números de teléfonos de emergencia en varios puntos y a la vista.</li>
+                                                <li class="mt-2">Las instalaciones eléctricas deben tener conexión a tierra, estar entubadas y en buenas condiciones de mantenimiento.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-7 my-md-7">
+                                    <div class="card bg-color4">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img17.svg"></div>
+                                            <h4>Para la señalización</h4>
+                                            <div class="hr"></div>
+                                            <ul class="text-left">
+                                                <li>En la entrada debe estar una señalización de “Solo se permite personal autorizado”. </li>
+                                                <li class="mt-2">También debe existir señalización del uso de equipo de protección (monogafas, guantes, overol, respirador, botas, cinturón ergonómico).</li>
+                                                <li class="mt-2">En los estantes las señalizaciones de “Peligro. Tóxico y/o Líquidos Inflamables”.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2 my-md-3">
+                                    <div class="card bg-color5">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img18.svg"></div>
+                                            <h4>El diseño de los estantes de almacenamiento</h4>
+                                            <div class="hr"></div>
+                                            <ul class="text-left">
+                                                <li>El último entrepaño debe estar a 15 cm del piso.</li>
+                                                <li class="mt-2">Los envases deben quedar asegurados para evitar derrames.</li>
+                                                <li class="mt-2">La altura del estante debe estar al nivel visual del operario.</li>
+                                                <li class="mt-2">Los estantes deben estar anclados a las paredes o al piso.</li>
+                                                <li class="mt-2">Organizar los productos químicos de acuerdo con su categoría toxicológica y sus incompatibilidades particulares. Los más tóxicos deben estar ubicados abajo.</li>
+                                                <li class="mt-2">En la distribución, los líquidos se ubican abajo y los sólidos arriba.</li>
+                                                <li class="mt-2">Debe existir un programa para el manejo de averías y recipientes en mal estado.</li>
+                                                <li class="mt-2">Ningún envase debe quedar ubicado sobre el piso.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-7 my-md-7">
+                                    <div class="card bg-color6">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img19.svg"></div>
+                                            <h4>Características de los envases</h4>
+                                            <div class="hr"></div>
+                                            <ul class="text-left">
+                                                <li>Revisar el estado de los envases o contenedores junto con sus etiquetas. Los envases deben mantenerse en perfecto estado.</li>
+                                                <li class="mt-2">Para movilizar frascos de vidrio no se deben tomar del cuello, o colocarlos en una bandeja o recipiente de seguridad.</li>
+                                                <li class="mt-2">No guardar producto por más de treinta (30) días, de tal manera que se mantenga una alta rotación y conservar la calidad del producto y evitar accidentes.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2 my-md-3">
+                                    <div class="card bg-color7">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img20.svg"></div>
+                                            <h4>Materiales</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left mb-4">En general, para pequeñas cantidades de producto, el vidrio transparente o de color ámbar, se prefiere por su alta resistencia al ataque de la mayoría de los productos químicos, es un material frágil y representa un riesgo. Es necesario protegerlos de la ruptura y colocar en las partes más bajas de los estantes.</p>
+                                            <p class="text-left">Actualmente, la mayoría de los fabricantes o distribuidores de plaguicidas utilizan envases plásticos y recomiendan mantenerlos en sus recipientes originales. Otra clase de productos químicos como ácidos, fertilizantes, combustibles, etc., vienen en envases de materiales y formas diversas, según el estado físico (sólido o líquido) y también, según la cantidad y sus incompatibilidades.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-7 mt-md-7">
+                                    <div class="card bg-color8">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img21.svg"></div>
+                                            <h4>Etiquetas</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Los envases deben estar etiquetados conforme con lo exigido por la norma.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="sub-line">
+                            <h3>Procedimiento general ante un derrame de plaguicida</h3>
+                        </div>
+                        <p>El derrame accidental de un producto químico debe tratarse con extremas precauciones por los riesgos asociados a la sustancia considerada peligrosa. Es indispensable capacitar a todo el personal acerca del protocolo antiderrames y disponer de los materiales requeridos para la atención de incidentes o accidentes.</p>
+                        <h4 class="mt-5">Instrucciones breves de cómo actuar en caso de derrame:</h4>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img22.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Atender al personal afectado retirándolo del área afectada a la persona y llevándolo a un área limpia, pasándolo por la ducha (si es pertinente y necesario) y prestando primeros auxilios según sea el caso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img23.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Aislar y demarcar el área afectada y avisar a su jefe inmediato, y a los números de emergencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img24.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Evaluar el accidente y definir el tipo de respuesta que se requiere, en cuanto a magnitud y tipo de sustancia involucrada, para ello es importante conocer y tener a mano las hojas de seguridad de los productos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img25.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Estimar el volumen derramado, chequeando el volumen remanente del envase.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img26.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">De no sentirse seguro para enfrentar la emergencia, activar el Plan de Emergencias.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img27.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Utilizar los implementos de seguridad disponibles en el Kit de control de derrames: lentes de seguridad, guantes de nitrilo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img28.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Detener la fuente de derrame levantando el envase.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img29.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Si la sustancia derramada corresponde a un inflamable, eliminar las fuentes de ignición cercanas como llamas, equipos eléctricos, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img30.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Recoger los residuos de producto con los elementos, materiales y equipos adecuados si es sólido (recogedor y escoba o pala, según sea la cantidad) o líquido depositar arena o el material disponible para poder recogerlo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img31.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Depositar los residuos y envases en los contenedores correspondientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img32.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Descontaminar el área, siguiendo el procedimiento de la hoja de seguridad del producto y teniendo en cuenta los periodos de reentrada.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-8">
+                                    <p class="mb-0">Realice el registro oficial de derrame de productos y diligencie el informe correspondiente.</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <section class="mt-4">
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto"><a class="media-link" href="media/documentos/Anexo_2.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                                    <div class="media-link-title">
+                                                        <p>Procedimiento de control de derrames de sustancias químicas</p>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="jumbotron bg-color2 mt-5">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img33.svg" style="max-width: 100%"></div>
+                                        <div class="col">
+                                            <p class="mb-0 mt-2">No fumar.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="jumbotron bg-color2 mt-5">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img34.svg" style="max-width: 100%"></div>
+                                        <div class="col">
+                                            <p class="mb-0 mt-2">No correr.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img35.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">Tener disponibles por escrito y en forma permanente y visible, las hojas de seguridad de los productos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img36.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p class="mb-0">En caso de derrame seguir el procedimiento que se indica en la hoja de seguridad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-3">
+                <div class="container" id="base1">
+                    <div class="header-ecored">
+                        <h1>3. Acondicionamiento de la bodega de almacenamiento</h1>
+                    </div><br id="limpieza">
+                    <div class="jumbotron bg-white">
+                        <div class="header-ecored mt-0">
+                            <h2>3.1 - Limpieza, clasificación, descontaminación</h2>
+                        </div><img class="img-fluid img-a" src="assets/images/pages/img37.svg" style="max-width: 100%">
+                        <p>La composición química de algunos plaguicidas puede generar incendio dentro de una bodega por la generación de humos tóxicos, vapores peligrosos, y también por los desechos que quedan después de que el fuego se ha apagado.</p>
+                        <p>De acuerdo con lo anterior, es necesario tener presente:</p>
+                        <div class="row justify-content-center">
+                            <div class="col-11">
+                                <div class="list align-items-center">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a1 img-fluid" src="assets/images/pages/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Los primeros 50 metros cuadrados de la bodega se deberán tener dos extintores de polvo químico o espuma multipropósito.</p>
+                                    </div>
+                                </div>
+                                <div class="list align-items-center mt-3">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a1 img-fluid" src="assets/images/pages/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Se deberá contar también con una instalación de sistemas automáticos de extinción.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-arrow my-5">
+                            <h3 class="text-center">Equipos para la limpieza y descontaminación</h3>
+                        </div>
+                        <p>Para el manejo de algún derrame dentro de una bodega se deberá tener en cuenta:</p>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img27.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Equipo de protección:</b></p>
+                                    <p>El cual debe incluir overol, guantes de nitrilo, botas impermeables, delantal, gafas, respirador para vapores.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img39.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Materiales absorbentes:</b></p>
+                                    <p>Los productos derramados se deben disponer de materiales como la cal apagada, aserrín o arena.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img30.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Equipo para limpieza:</b></p>
+                                    <p>Pala de plástico, escoba, estopa de algodón, detergente y soda cáustica.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img38.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Recipientes para desechos:</b></p>
+                                    <p>Canecas con tapas y bolsas plásticas de alto calibre.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-arrow my-5">
+                            <h3 class="text-center">Condiciones de almacenamiento de productos plaguicidas:</h3>
+                        </div>
+                        <p>Se deben tener en cuenta algunas condiciones para el almacenamiento de plaguicidas, para así garantizar la seguridad de los productos y del medio circundante:</p><img class="img-fluid img-a" src="assets/images/pages/img40.svg" style="max-width: 100%">
+                        <div class="list align-items-center">
+                            <div class="list__item">
+                                <div class="list__item__bulletNumber"><span>1</span></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="mb-0">El piso de la bodega debe estar marcado para señalar las zonas de almacenaje y circulación, de esta manera estos espacios libres permiten el fácil acceso para la revisión y descontaminación si se llega a presentar algún derrame de productos.</p>
+                            </div>
+                        </div>
+                        <div class="list align-items-center mt-3">
+                            <div class="list__item">
+                                <div class="list__item__bulletNumber"><span>2</span></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="mb-0">En caso de alguna emergencia, la bodega deberá tener el siguiente equipo para tratarla:</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-3">
+                            <div class="col-11">
+                                <div class="list align-items-center">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a1 img-fluid" src="assets/images/pages/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Material absorbente, como barreras o paños.</p>
+                                    </div>
+                                </div>
+                                <div class="list align-items-center mt-3">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a1 img-fluid" src="assets/images/pages/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Contenedores vacíos, o algunas bolsas de calibre grueso para volver a envasar otros contenedores que presenten algunos daños.</p>
+                                    </div>
+                                </div>
+                                <div class="list align-items-center mt-3">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a1 img-fluid" src="assets/images/pages/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Agua de un grifo o de algún recipiente para enjuagar las manos y cara si llegan a estar contaminadas.</p>
+                                    </div>
+                                </div>
+                                <div class="list align-items-center mt-3">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a1 img-fluid" src="assets/images/pages/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Equipo de desinfección para lavado de ojos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-arrow my-5">
+                            <h3 class="text-center">Disposición y clasificación de plaguicidas dentro del sitio de almacenamiento</h3>
+                        </div>
+                        <p>Para un buen almacenamiento de los plaguicidas se deben tener en cuenta las recomendaciones contempladas en el <b>Decreto 1843 de 1991 y la NTC 1319</b>:</p>
+                        <section class="my-5 pt-5">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-6">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img41.svg"></div>
+                                            <h4>Dedicación exclusiva</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Entendida en la disposición única de la bodega donde se almacenan los plaguicidas, ya que en ella no deben almacenarse alimentos para ser humano o para los animales, elementos de protección, elementos de oficina, elementos personales. En resumidas cuentas, ningún elemento cuya contaminación pueda representar un riesgo para la salud de las personas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-7 mt-md-0">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img42.svg"></div>
+                                            <h4>Protección contra factores de deterioro</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">los productos plaguicidas deben protegerse de la humedad, el sol directo y del calor excesivo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-7 mt-md-7">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img43.svg"></div>
+                                            <h4>Separación de productos</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Los productos plaguicidas deben separarse dependiendo de sus riesgos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-7 mt-md-7">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img44.svg"></div>
+                                            <h4>Revisión de los productos</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Siempre que los productos vayan a ingresar a la bodega, se deben revisar. También, periódicamente por el encargado de los productos plaguicidas, para así constatar que no existan filtraciones o derrames y su fecha de vencimiento no esté próxima.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-7 mt-md-7">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img45.svg"></div>
+                                            <h4>Productos parcialmente usados</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Estos productos deben ser guardados con las tapas muy bien apretadas. Las bolsas deben ser enrolladas con mucho cuidado de abajo hacia arriba y posteriormente ser aseguradas con una cinta adhesiva o colocarlas dentro de una bolsa plástica.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-7 mt-md-7">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img46.svg"></div>
+                                            <h4>Orden y aseo</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">La bodega siempre debe permanecer ordenada y limpia. Al momento de barrer el piso se debe usar materiales absorbentes húmedos, como el aserrín.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-7 mt-md-7">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img47.svg"></div>
+                                            <h4>Conocimiento</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Los encargados del almacenamiento deben distinguir los símbolos de peligro. También debe tener conocimiento de cómo se deben separar los herbicidas de los insecticidas, fungicidas, fertilizantes y semillas. El manejo de los plaguicidas siempre debe ser operado por personas calificadas y certificadas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-7 mt-md-7">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img48.svg"></div>
+                                            <h4>Uso de estibas</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Los envases de los plaguicidas no deben situarse directamente en el suelo, pero si sobre un sistema que evite el contacto directo con el piso sobre estibas o estantes. </p>
+                                            <p class="text-left mt-4">Las estibas incomunican del suelo los envases de los plaguicidas y los protegen de la humedad, con esto se puede realizar un manejo mecanizado y facilitan la organización dentro del sitio de establecimiento de los productos. Cuando se utilizan estibas, los bloques de almacenamiento deberán tener un ancho de dos estibas y un largo de máximo de ocho estibas.</p>
+                                            <p class="text-left mt-4">En las estibas, las cajas deberán ser apiladas en columna, de esta manera sus cuatro esquinas coinciden.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-7 mt-md-7">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img49.svg"></div>
+                                            <h4>Uso de estantes</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Los estantes podrán ser de metal o de madera. Los estantes de madera deben ser pintados con pinturas resistentes a los solventes. En estibas o estantes los envases de líquidos deberán ser colocados con las tapas mirando hacia arriba, nunca se deben colocar acostados, a menos que sea un caso de emergencia y por poco tiempo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="header-arrow my-5">
+                            <h3 class="text-center">Matriz de almacenamiento</h3>
+                        </div>
+                        <p>La Matriz de almacenamiento sirve para la clasificación de los productos plaguicidas y sus posteriores mezclas entre cada uno de ellos.</p>
+                        <section class="mt-4">
+                            <div class="row justify-content-center">
+                                <div class="col-auto"><a class="media-link" href="media/documentos/Anexo_3.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                        <div class="media-link-title">
+                                            <p>Matriz de almacenamiento químico</p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </section>
+                        <div class="header-arrow mt-7 mb-5">
+                            <h3 class="text-center">Clasificación de los productos</h3>
+                        </div>
+                        <p>Después de realizar el listado de los productos con sus respectivas hojas de seguridad, se deberán separar los sólidos de líquidos e identificar la clase de riesgo al cual deberá pertenecer cada uno, de acuerdo al criterio de la Organización de las Naciones Unidas para el transporte de plaguicidas.</p>
+                        <div class="header-arrow mt-7 mb-6">
+                            <h3 class="text-center">Distinción por colores</h3>
+                        </div>
+                        <section class="my-5 pt-5">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-4">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img50.svg"></div>
+                                            <h4>Color verde</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Plaguicidas que pueden almacenarse juntos. Verificar la reactividad individual utilizando la MSDS (ficha de seguridad del producto, sigla que al español traduce: Hoja de Datos de Seguridad de Materiales).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 mt-7 mt-md-0">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img51.svg"></div>
+                                            <h4>Color amarillo</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Precaución, posibles restricciones. Se tienen que revisar las incompatibilidades individuales utilizando la MSDS.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 mt-7 mt-md-0">
+                                    <div class="card bg-color1">
+                                        <div class="card-body text-center">
+                                            <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img52.svg"></div>
+                                            <h4>Color rojo</h4>
+                                            <div class="hr"></div>
+                                            <p class="text-left">Estos plaguicidas se tienen que almacenar por separado. Son incompatibles.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="header-arrow mt-7 mb-5">
+                            <h3 class="text-center">Separadores</h3>
+                        </div>
+                        <p>A continuación, se mostrará la matriz de incompatibilidad química del CISTEMA (Centro de Información de Sustancias Químicas, Emergencias y Medio Ambiente) con convenciones y notas:</p>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-2 bg-color9">
+                                <p class="text-white"><b>Color verde:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">los plaguicidas pueden almacenarse juntos. verificar la reactividad individual, utilizando la ficha de seguridad.</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center mt-4">
+                            <div class="col-2 bg-color10">
+                                <p class="text-white"><b>Color amarillo:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">Precaución, posibles restricciones.</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center mt-4">
+                            <div class="col-2 bg-color11">
+                                <p class="text-white"><b>Color rojo:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">Se requiere almacenar por separado. Son incompatibles.</p>
+                            </div>
+                        </div>
+                        <h2 class="mt-5">Notas:</h2>
+                        <div class="list align-items-center mt-5">
+                            <div class="list__item">
+                                <div class="list__item__bulletNumber"><span>1</span></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="mb-0">Siempre deberá realizarse una valoración de riesgo. Se permitirá el almacenamiento de plaguicidas siempre y cuando el riesgo evaluado no sea peligroso.</p>
+                            </div>
+                        </div>
+                        <div class="list align-items-center mt-3">
+                            <div class="list__item">
+                                <div class="list__item__bulletNumber"><span>2</span></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="mb-0">Las sustancias inflamables a excepción de los líquidos podrán ser almacenados en algunas áreas que no contengan más de 50 cilindros de gases comprimidos, de los cuales máximo 25 pueden contener gases tóxicos.</p>
+                            </div>
+                        </div>
+                        <div class="list align-items-center mt-3">
+                            <div class="list__item">
+                                <div class="list__item__bulletNumber"><span>3</span></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="mb-0">Los líquidos con envases dañados o deteriorados no deben almacenarse con los líquidos inflamables.</p>
+                            </div>
+                        </div>
+                        <div class="list align-items-center mt-3">
+                            <div class="list__item">
+                                <div class="list__item__bulletNumber"><span>4</span></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="mb-0">Las sustancias que no reaccionan entre sí pueden almacenarse juntas. Esto se puede lograr gracias a separaciones físicas.</p>
+                            </div>
+                        </div>
+                        <div class="header-arrow mt-7 mb-5">
+                            <h3 class="text-center">Matriz de incompatibilidades al momento de almacenar:</h3>
+                        </div>
+                        <p>Antes de almacenar los productos plaguicidas, se debe tener en cuenta su presentación (líquida o sólida), sin dejar de lado el color de la clasificación de cada uno de ellos.</p>
+                        <div class="row p-3 bg-color12 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <h3>Líquidos:</h3>
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-2 bg-color9">
+                                        <p class="text-white"><b>Color verde:</b></p>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0">Estos plaguicidas pueden almacenarse juntos.</p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-4">
+                                    <div class="col-2 bg-color10">
+                                        <p class="text-white"><b>Color amarillo:</b></p>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0">Para estos plaguicidas es necesario una valoración de riesgo.</p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-4">
+                                    <div class="col-2 bg-color11">
+                                        <p class="text-white"><b>Color rojo:</b></p>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0">Estos plaguicidas se requieren almacenar por separado. Resultan ser incompatibles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-2"><img class="img-fluid img-a1" src="assets/images/pages/img53.svg" style="max-width: 100%"></div>
+                            <div class="col-12 mt-3"><img class="img-fluid img-a1" src="assets/images/pages/img54.svg" style="max-width: 100%"></div>
+                        </div>
+                        <div class="row p-3 bg-color13 align-items-center mt-4">
+                            <div class="col-12 col-md-6">
+                                <h3>Sólidos:</h3>
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-2 bg-color9">
+                                        <p class="text-white"><b>Color verde:</b></p>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0">Estos plaguicidas pueden almacenarse juntos.</p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-4">
+                                    <div class="col-2 bg-color10">
+                                        <p class="text-white"><b>Color amarillo 1:</b></p>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0">para estos plaguicidas es necesario una valoración del riesgo.</p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-4">
+                                    <div class="col-2 bg-color14">
+                                        <p class="text-white"><b>Color amarillo 6:</b></p>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0">Las sustancias de la clase nueve que inicien o difundan el fuego con una rápida velocidad no deben almacenarse al lado de sustancias tóxicas.</p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-4">
+                                    <div class="col-2 bg-color11">
+                                        <p class="text-white"><b>Color rojo:</b></p>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0">Estos plaguicidas se requieren almacenar por separado. Resultan ser incompatibles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-2"><img class="img-fluid img-a1" src="assets/images/pages/img55.svg" style="max-width: 100%"></div>
+                            <div class="col-12 mt-3"><img class="img-fluid img-a1" src="assets/images/pages/img56.svg" style="max-width: 100%"></div>
+                        </div>
+                        <div class="header-arrow mt-7 mb-5">
+                            <h3 class="text-center">Asignación de colores al momento del almacenamiento:</h3>
+                        </div>
+                        <p>Para una fácil identificación de grupos de plaguicidas que deben ser mantenidos separados, se recomienda asignarles colores y colocar cintas adhesivas a cada envase, así:</p>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-2 bg-color15">
+                                <p class="text-white"><b>Azul:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">Tóxicos o nocivos (ejemplo: sulfato de cobre, ningún plaguicida se incluye).</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center mt-4">
+                            <div class="col-2 bg-color10">
+                                <p class="text-white"><b>Amarillo:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">Oxidantes (ejemplo: nitrato de amonio).</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center mt-4">
+                            <div class="col-2 bg-color11">
+                                <p class="text-white"><b>Rojo:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">Inflamables (ejemplo: alcohol etílico). fosfórico).</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center mt-4">
+                            <div class="col-2 bg-color16">
+                                <p><b>Blanco:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">Corrosivos (ejemplo: ácido fosfórico).</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center mt-4">
+                            <div class="col-2 bg-color17">
+                                <p class="text-white"><b>Gris:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">Peligrosos (ejemplo: sulfato de manganeso).</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center mt-4">
+                            <div class="col-2 bg-color9">
+                                <p class="text-white"><b>Verde:</b></p>
+                            </div>
+                            <div class="col-8">
+                                <p class="mb-0">Separadores (plaguicidas de bajo riesgo, ejemplo como el azúcar).</p>
+                            </div>
+                        </div>
+                        <div class="header-arrow mt-7 mb-5">
+                            <h3 class="text-center">Elementos de protección personal (máscara con filtro, lentes, guantes, botas, overol)</h3>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img57.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Para el cuerpo:</b></p>
+                                    <p>Para el caso de aplicaciones, debe ser ropa impermeable para la protección de todo el cuerpo. Los materiales más utilizados para la impermeabilización del cuerpo son el PVC, hule y Tyvec.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img58.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Para los ojos:</b></p>
+                                    <p>Se recomienda utilizar lentes de protección sellados, los cuales impedirán la penetración de los plaguicidas hacia los ojos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img59.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Para las manos:</b></p>
+                                    <p>Es necesario utilizar guantes de puño largo de goma o nitrilo. Para el uso del plaguicida este guante debe ser resistente y que no produzca efectos dérmicos a la persona.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img60.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Para los pies:</b></p>
+                                    <p>Se deben utilizar botas de goma o PVC con una suela antideslizante y de caña larga.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron bg-color2 mt-5">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img61.svg" style="max-width: 100%"></div>
+                                <div class="col">
+                                    <p><b>Para las vías respiratorias:</b></p>
+                                    <p>Se deben utilizar máscaras y filtros químicos, estos elementos deben ser de calidad certificada. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="glosario">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Glosario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p> <strong class="mr-2">Clase de peligro:</strong>naturaleza del peligro de una sustancia: físico, para la salud o para el ambiente, por ejemplo: Líquido inflamable, cancerígeno, toxicidad aguda por vía oral.</p>
+                        <p><strong class="mr-2">Comunicación de peligros:</strong>transmisión clara, veraz y sencilla a los usuarios y consumidores, de la información (gráfica o escrita) actualizada de una sustancia, mezcla o aleación, por medio de una etiqueta o ficha de datos de seguridad. Incluye las características físicas, químicas y de toxicidad, las medidas preventivas para su uso y manejo que se deben tomar durante su ciclo de vida, con el fin de prever cualquier afectación o daño en los seres vivos y su entorno, así como de las medidas de atención en caso de emergencia.</p>
+                        <p><strong class="mr-2">Consumidor o usuario final:</strong>toda persona natural o jurídica que, como destinatario final, adquiera, disfrute o utilice un determinado producto, cualquiera que sea su naturaleza para la satisfacción de una necesidad propia, privada, familiar o doméstica y empresarial cuando no esté ligada intrínsecamente a su actividad económica.</p>
+                        <p><strong class="mr-2">Embalaje:</strong>contenedor o recipiente que contiene varios empaques.</p>
+                        <p><strong class="mr-2">Empaque:</strong>cualquier recipiente o envoltura que contenga algún producto de consumo para su entrega o exhibición a los consumidores.</p>
+                        <p><strong class="mr-2">Envase:</strong>recipiente destinado a contener productos hasta su consumo final.</p>
+                        <p><strong class="mr-2">Etiqueta:</strong>cualquier rótulo, marbete, inscripción, imagen u otra materia descriptiva o gráfica, escrita, impresa, marcada, grabada en alto o bajo relieve, adherida o sobrepuesta al producto, a su envase o, cuando no sea posible por las características del producto o su envase, al embalaje.</p>
+                        <p><strong class="mr-2">Ficha de datos de seguridad (FDS):</strong>documento que proporciona información completa sobre una sustancia o mezcla con miras al control y reglamentación de su utilización en el lugar de trabajo.</p>
+                        <p><strong class="mr-2">Identificación del peligro:</strong>frase que, asignada a una clase o categoría de peligro, describe la naturaleza del peligro que presenta un producto y, cuando corresponda, el grado de peligro.</p>
+                        <p><strong class="mr-2">Liga de consumidores:</strong>organización que tiene como fin proteger, informar, educar y hacer respetar los derechos de los consumidores y velar porque las normas y las leyes que protegen y consagran esta protección se cumplan y apliquen por parte de las autoridades competentes.</p>
+                        <p><strong class="mr-2">Mezcla:</strong>agregación o incorporación o disolución compuesta por dos o más productos químicos que no reaccionan entre sí.</p>
+                        <p><strong class="mr-2">Número UN:</strong>código específico o número de serie para cada mercancía peligrosa, asignado por el sistema de la Organización de las Naciones Unidas (ONU), que permite identificar el producto sin importar el país del cual provenga. A través de este número se puede identificar una mercancía peligrosa que tenga etiqueta en un idioma diferente del español.</p>
+                        <p><strong class="mr-2">Peligro:</strong>fuente, situación o acto con potencial de causar daño en la salud de las personas, en los equipos, en las instalaciones o en el ambiente.</p>
+                        <p><strong class="mr-2">Pictograma:</strong>composición gráfica que contenga un símbolo, así como otros elementos gráficos, tales como un borde, un motivo o un color de fondo y que sirve para comunicar informaciones específicas.</p>
+                        <p><strong class="mr-2">Producción bruta:</strong>valor de todos los productos y subproductos manufacturados por el establecimiento industrial.</p>
+                        <p><strong class="mr-2">Producto químico:</strong>todas aquellas sustancias químicas o sus mezclas y aleaciones.</p>
+                        <p><strong class="mr-2">Riesgo:</strong>es la probabilidad de que se produzca un efecto adverso a causa de una determinada exposición a una sustancia química.</p>
+                        <p><strong class="mr-2">Sustancia:</strong>un elemento químico y sus compuestos en estado natural u obtenidos mediante cualquier proceso de producción, incluidos los aditivos necesarios para conservar la estabilidad del producto y las impurezas que resulten del proceso utilizado, y excluidos los disolventes que puedan separarse sin afectar a la estabilidad de la sustancia ni modificar su composición.</p>
+                        <p><strong class="mr-2">Unidad de transporte:</strong>Espacio destinado en un vehículo para la carga a transportar, en el caso de los vehículos rígidos se refiere a la carrocería y en los articulados al remolque o al semirremolque.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="anexos">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Material complementario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Nombre del documento o material</th>
+                                    <th>Tipo de material</th>
+                                    <th>Enlace del recurso</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Resolución 1167 de 2010. [Instituto Colombiano Agrícola]. Por medio de la cual se establecen los requisitos para el registro y control de personas que se dediquen a la comercialización de insumos agropecuarios y/o semillas para siembra a través de establecimientos de comercio.25 de marzo de 2010. D.O. 47666.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="https://www.ica.gov.co/areas/pecuaria/servicios/registro-de-establecimiento-comercializadores-de-i/anexo-resolucion-1167.aspx" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="referencias">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Referencias bibliográficas</h1>
+                    </div>
+                    <div class="jumbotron bg-white referencias">
+                        <p>Decreto 1496 de 2018. Por el cual se adopta el Sistema Globalmente Armonizado de Clasificación y Etiquetado de Productos Químicos y se dictan otras disposiciones en materia de seguridad química. 56 de agosto de 2018. D.O. 50677.</p>
+                        <hr>
+                        <p>ONU. (2018). Recomendaciones relativas al transporte de mercancías peligrosas - Reglamentación Modelo. Decimonovena edición revisada. Naciones Unidas Publicaciones.</p>
+                        <hr>
+                        <p>Resolución 1167 de 2010. [Instituto Colombiano Agrícola]. Por medio de la cual se establecen los requisitos para el registro y control de personas que se dediquen a la comercialización de insumos agropecuarios y/o semillas para siembra a través de establecimientos de comercio.25 de marzo de 2010. D.O. 47666.</p>
+                        <hr>
+                        <p>Resolución 2075 de 2019. [Comisión de la Comunidad Andina]. Manual Técnico Andino para el Registro y Control de plaguicidas químicos de uso agrícola.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Creditos">
+            <div class="container">
+                <h1>Créditos </h1>
+                <div class="brand-line-primary"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzón</strong><br /> <span class="text-small">Líder del equipo</span></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Contenido Instruccional
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Gloria Matilde Lee Mejía </strong><br /> <span class="text-small">Responsable del equipo</span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios</span><br><span class="text-small">Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Rafael Nelftalí Lizcano Reyes</strong><br /> <span class="text-small">Asesor pedagógico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro industrial del diseño y la manufactura </span><br><span class="text-small">Regional Santander</span></p>
+                        <p class="footer-texto mb-2"><strong>Maryuri Agudelo Franco</strong><br /><span class="text-small">Diseñadora Instruccional<br /></span></p>
+                        <p class="footer-texto mb-2"><strong>Jesús Libardo Acero Cruz</strong><br /><span class="text-small">Diseñadora Instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de diseño y metrología</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Julieth Paola Vital López </strong><br /><span class="text-small">Evaluador instruccional<br /></span><span class="text-small">Revisora de estilo<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro para la Industria y la Comunicación Gráfica</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
+                        <p class="footer-texto mb-2"><strong>Leyson Fabian Castaño Perez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto mb-2"> <strong>Adriana Rincón Avendaño</strong><br />
+                            <strong>Camilo Andrés Villamizar Lizcano</strong><br />
+                            <strong>Carlos Julián Ramírez Benítez</strong><br />
+                            <strong>Yazmin Rocio Figueroa Pacheco</strong><br />
+                            <strong>Yenny patricia Ulloa Villamizar</strong><br /><span class="text-small">Diseño web & producción audiovisual<br /></span></p>
+                        <p class="footer-texto mb-2"><strong>Edgar Mauricio Cortes</strong><br />
+                            <strong>Jhon Jairo Urueta Alvarez</strong><br /><span class="text-small">Desarrollo Front-End<br /></span></p>
+                        <p class="footer-texto mb-2"><span class="text-small text-uppercase">Centro industrial del diseño y la manufactura </span><br><span class="text-small">Regional Santander</span></p>
+                        <h4 class="footer-subtitulo-2 mt-4">
+                            <div class="fa fa-caret-right mr-2"></div>Gestores de repositorio
+                        </h4>
+                        <p class="footer-texto"> <strong>Brayan Steven Pinto Diaz</strong><br />
+                            <strong>Edilson Laverde Molina</strong><br />
+                            <strong>Ricardo Alfonso Gonzalez Vargas</strong><br /><span class="text-small">Validación de recursos<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO DE COMERCIO Y SERVICIOS</span><br><span class="text-small">Regional Tolima</span></p>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="d-flex flex-column justify-content-center"><img src="assets/images/logos/senaLogo.svg" style="max-width:100px"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section id="cc">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row"><span class="pr-3"><i class="icon cc"></i></span><span>Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que el trabajo original.</span></div>
+            </div>
+        </section><a class="scroll-to-top-btn">
+            <div class="fa fa-angle-up fa-2x"></div>
+        </a>
+        <script src="assets/js/vendor.js"></script>
+        <script src="js/local.js"></script>
+    </body>
+</html>
